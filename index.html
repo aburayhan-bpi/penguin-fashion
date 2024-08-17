@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>TailwindCSS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .font-montserrat {
+            font-family: "Montserrat", sans-serif;
+        }
+
+        .font-roboto {
+            font-family: "Roboto", system-ui;
+        }
+
+        .font-bebas {
+            font-family: "Bebas Neue", system-ui;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg-amber-50 mb-10">
+        <!-- navbar section -->
+        <nav class="flex justify-between items-center p-4 xl:w-4/5 xl:m-auto">
+            <div class="flex justify-center items-center">
+                <img class="w-16" src="images/logo.png" alt="">
+                <h2 class="font-montserrat uppercase text-[1.2rem] font-bold ml-1"><span
+                        class="text-[#A4BC46]">Penguin</span>
+                    <span class="text-[#363958]">Fashion</span>
+                </h2>
+            </div>
+            <div class="inline md:hidden">
+                <i class="fa-solid fa-bars text-3xl ml-1"></i>
+            </div>
+            <div class="hidden md:flex">
+                <ul class="md:flex">
+                    <li class="p-2 ml-8 md:ml-2 lg:ml-10 font-roboto font-medium text-lg text-[#3C3C3C]">Home</li>
+                    <li class="p-2 ml-8 md:ml-2 lg:ml-10 font-roboto font-medium text-lg text-[#3C3C3C]">Product</li>
+                    <li class="p-2 ml-8 md:ml-2 lg:ml-10 font-roboto font-medium text-lg text-[#3C3C3C]">About us</li>
+                    <li class="p-2 ml-8 md:ml-2 lg:ml-10 font-roboto font-medium text-lg text-[#3C3C3C]">Contact us</li>
+                </ul>
+            </div>
+        </nav>
+        <!-- hero section -->
+        <section class="p-4 xl:w-4/5 xl:m-auto md:flex /*border border-red-500*/">
+            <div class="md:w-2/4 lg:w-2/4 /*border border-red-500*/">
+                <h2 class="mt-6">
+                    <span class="text-[#FABE4C] font-bebas text-6xl lg:text-7xl inline-block mb-6">BE THE
+                        PENGUIN</span><br><span class="text-[#363958] font-bebas text-6xl lg:text-7xl">OF
+                        WINTER
+                    </span>
+                </h2>
+                <p
+                    class="text-[#3E3E3E] max-w-[300px] mt-[10px] lg:mt-[7px] font-roboto font-medium text-[16px] leading-7 lg:text-lg">
+                    Lorem Ipsum is simply dummy text of the
+                    printing and typesetting industry.
+                </p>
+                <button
+                    class="py-5 px-8 mt-3 rounded-xl text-white text-xl font-medium  bg-gradient-to-r from-[#A4BC46] to-[#85A019]"><i
+                        class="fa-solid fa-cart-shopping me-1"></i> BUY NOW
+                </button>
+            </div>
+            <div class="md:w-3/5 lg:w-[450px] md:mt-[-110px]">
+                <img class="w-full mt-20 object-contain /*border border-red-500*/" src="images/model.png" alt="">
+            </div>
+        </section>
+    </header>
+    <main class=" p-4 xl:w-4/5 xl:m-auto">
+        <section>
+            <h2 class="uppercase text-[#363958] font-bebas text-5xl mb-10">Woman Jacket</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                <!-- jacket line 1 -->
+                <div class="p-4 rounded-2xl bg-[#FFFFFF] shadow-xl space-y-4">
+                    <img class="bg-[#F1F1F1] p-5 rounded-2xl" src="images/jacket-1.png" alt="">
+                    <h4 class="text-[#363958] font-bold text-xl">Yellow Caot Jacket</h4>
+                    <p class="text-sm font-normal text-[#3E3E3E]">Lorem Ipsum is simply dummy text of the
+                        printing and typesetting industry.</p>
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-[#FABE4C] text-3xl font-bold">$234</h3>
+                        <button
+                            class="py-4 px-6 rounded-xl text-white text-sm font-medium  bg-gradient-to-r from-[#A4BC46] to-[#85A019]"><i
+                                class="fa-solid fa-cart-shopping"></i> BUY NOW
+                        </button>
+                    </div>
+                </div>
+                <!-- jacket line 2 -->
+                <div class="p-4 rounded-2xl bg-[#FFFFFF] shadow-xl space-y-4">
+                    <img class="bg-[#F1F1F1] p-5 rounded-2xl" src="images/jacket-2.png" alt="">
+                    <h4 class="text-[#363958] font-bold text-xl">Yellow Caot Jacket</h4>
+                    <p class="text-sm font-normal text-[#3E3E3E]">Lorem Ipsum is simply dummy text of the
+                        printing and typesetting industry.</p>
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-[#FABE4C] text-3xl font-bold">$234</h3>
+                        <button
+                            class="py-4 px-6 rounded-xl text-white text-sm font-medium  bg-gradient-to-r from-[#A4BC46] to-[#85A019]"><i
+                                class="fa-solid fa-cart-shopping"></i> BUY NOW
+                        </button>
+                    </div>
+                </div>
+                <!-- jacket line 3 -->
+                <div class="p-4 rounded-2xl bg-[#FFFFFF] shadow-xl space-y-4">
+                    <img class="bg-[#F1F1F1] p-5 rounded-2xl" src="images/jacket-3.png" alt="">
+                    <h4 class="text-[#363958] font-bold text-xl">Yellow Caot Jacket</h4>
+                    <p class="text-sm font-normal text-[#3E3E3E]">Lorem Ipsum is simply dummy text of the
+                        printing and typesetting industry.</p>
+                    <div class="flex justify-between items-center">
+                        <h3 class="text-[#FABE4C] text-3xl font-bold">$234</h3>
+                        <button
+                            class="py-4 px-6 rounded-xl text-white text-sm font-medium  bg-gradient-to-r from-[#A4BC46] to-[#85A019]"><i
+                                class="fa-solid fa-cart-shopping"></i> BUY NOW
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+
+
+    <script src="https://kit.fontawesome.com/39cffd06a1.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
